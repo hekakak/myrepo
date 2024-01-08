@@ -2,7 +2,9 @@
 title: "first"
 author: "kaka"
 date: "2024-01-08"
-output: html_document
+output:
+  html_document:
+    df_print: paged
 ---
 
 I am Kaka
