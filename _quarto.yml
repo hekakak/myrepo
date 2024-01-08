@@ -1,0 +1,129 @@
+project:
+  type: book
+  output-dir: "docs" 
+  execute-dir: project 
+
+book:
+  title: "R语言数据科学"
+  subtitle: "从数据清洗到高级统计学和非参数统计"
+  author: "何志锋"
+  date: 2024/1/2
+  date-format: "YYYY[年]M[月]D[日]"
+  cover-image: images/book_cover.jpg
+  chapters:
+    - text: 主页
+      file: index.qmd
+    - text: 前言
+      file: intro.qmd
+    - text: "---" 
+    - part: r_basic/r_basics.qmd
+      chapters:
+        - r_basic/environment_configuration.qmd
+        - r_basic/data_input_output.qmd
+    - part: quarto_foundation/quarto_foundation.qmd
+      chapters:
+        - quarto_foundation/yaml_settings.qmd
+        - quarto_foundation/images_settings.qmd
+        - quarto_foundation/cross_references.qmd
+        - quarto_foundation/insert_other_content.qmd
+        - quarto_foundation/quarto_books.qmd
+        - quarto_foundation/github_pages.qmd
+    - text: "---"
+    - part: "参考文献"
+      chapters:
+        - references.qmd
+  sidebar:
+    style: "docked" 
+    collapse-level: 1 
+    search: true 
+    logo: images/logo.png 
+    tools:
+      - icon: twitter 
+        href: https://twitter.com 
+      - icon: youtube
+        href: https://youtube.com
+  navbar:
+    logo: images/logo.jpg
+    background: "#f1f1f3" 
+    foreground: "black" 
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - file: intro.qmd
+      - text: "Parts"
+        menu:
+          - r_basic/r_basics.qmd
+          - bioinformatics/single_cell/r_single_cell.qmd
+          - quarto_foundation/quarto_foundation.qmd
+      - file: references.qmd
+    right:
+      - icon: book-fill
+        text: Bookdown
+        href: https://bookdown.org
+      - icon: github
+        text: GitHub
+        menu:
+          - text: Source Code
+            url: https://github.com/djhcod/r-notes  #
+          - text: Report a Bug
+            url: https://github.com/djhcod/r-notes/issues #
+          - text: Pull Request
+            url: https://github.com/djhcod/r-notes/pulls #
+  page-navigation: true
+  repo-url: https://github.com/djhcod/r-notes 
+  repo-actions: [source, issue, edit] 
+  search:
+    location: sidebar
+    type: textbox
+  page-footer:
+    left:
+      - text: "This book was built with Quarto"
+    center: "Copyright 2024, He Zhifeng"
+    right:
+      - icon: github
+        url: https://github.com/djhcod
+    border: true  
+
+format:
+  html:
+    theme:
+      light: Flatly 
+      dark: darkly
+    embed-resources: false 
+    code-tools: true
+    code-link: true
+    anchor-sections: true 
+    link-external-newwindow: true 
+    toc-depth: 3 
+    toc-expand: 1 
+
+execute:
+  eval: true
+  warning: false
+  cache: true
+  
+number-sections: true 
+number-depth: 2 
+
+crossref:
+  appendix-title: "附录" 
+  appendix-delim: ":" 
+  fig-title: 图    
+  tbl-title: 表    
+  fig-prefix: 图  
+  tbl-prefix: 表   
+  fig-labels: arabic   
+  tbl-labels: arabic   
+  subref-labels: alpha A 
+  
+fig-cap-location: bottom
+tbl-cap-location: top
+reference-location: margin 
+citation-location: document 
+
+
+bibliography: references.bib
+
+editor: visual
+

@@ -1,0 +1,38 @@
+---
+title: "关于这本笔记"
+sidebar: false # 关闭左侧栏
+toc: false # 关闭右侧的页面目录
+number-sections: false # 取消对标题的编号
+code-tools: false # 关闭代码工具
+about:
+  template: trestles # 模板
+  image: images/book_cover.jpg # 封面图片
+  # 添加链接
+  links:
+    - icon: book-fill # 添加图标（https://icons.getbootstrap.com）
+      text: Bookdown # 图标的文字
+      href: https://bookdown.org # 图标的链接
+    - icon: github
+      text: Github
+      href: https://github.com/djhcod/r-notes
+    - text: Email
+      href: mailto::24-056@gduf.edu.cn
+---
+
+Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
+
+------------------------------------------------------------------------ 
+
+## Education
+
+| 统计学博士研究生（2015-2021），暨南大学经济学院 
+| 管理学硕士研究生（2005-2008）, 广东工业大学管理学院 
+| 数学学士本科（2001-2005），广州大学
+
+------------------------------------------------------------------------
+
+## Experience
+
+Wengo Analytics \| Head Data Scientist \| April 2018 - present
+
+GeoScynce \| Chief Analyst \| Spet 2012 - April 2018
